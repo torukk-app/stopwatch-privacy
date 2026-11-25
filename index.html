@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Easy! Stopwatch & Timer, an Android app by torukk.">
+  <meta name="description" content="Privacy Policy for Easy! Stopwatch & Timer, an Android and iOS app by torukk.">
   <title>Privacy Policy | Easy! Stopwatch & Timer</title>
   <style>
     :root { color-scheme: light; --ink:#17253b; --muted:#5d6b7a; --line:#dce4ed; --blue:#215ac7; }
@@ -31,49 +31,62 @@
     <nav class="language" aria-label="Languages"><a href="#english">English</a><a href="#japanese" lang="ja">日本語</a></nav>
     <section id="english" lang="en">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: November 23, 2026<br>Developer: torukk<br>Application: Easy! Stopwatch &amp; Timer (Android; package name: <code>com.torukk.stopwatch</code>)</p>
-      <p>torukk provides Easy! Stopwatch &amp; Timer (the “App”) free of charge. The App includes advertising provided through Google AdMob. This Privacy Policy explains what information is stored by the App and what information may be processed by third-party services.</p>
+      <p class="meta">Effective date: November 25, 2026<br>Developer: torukk<br>Application: Easy! Stopwatch &amp; Timer<br>Platforms: Android (package name: <code>com.torukk.stopwatch</code>) and iOS (bundle ID: <code>com.torukk.stopwatch</code>)</p>
+      <p>torukk provides Easy! Stopwatch &amp; Timer (the “App”) free of charge for Android and iOS. Both versions of the App include advertising provided through Google AdMob. This Privacy Policy explains what information is stored by the App, which device permissions it uses, and what information may be processed by third-party services. Where the Android and iOS versions differ, this policy says which version a statement applies to.</p>
 
       <h2>1. Information stored on your device</h2>
-      <p>The App stores stopwatch and timer information, including saved measurements, settings, and timing state, in local app storage so that its features work. The developer does not operate a server to receive or maintain your saved stopwatch measurements. The App does not require you to create an account.</p>
-      <p>Depending on your device and Android settings, local app data may also be included in operating-system backup or restore services, which are managed separately by the device or platform provider.</p>
+      <p>The App stores stopwatch and timer information, including saved measurements, settings, and timing state, in local app storage so that its features work. On iOS, the App also stores the identifier of the scheduled timer alarm or notification so that it can be changed or canceled later. The developer does not operate a server to receive or maintain your saved stopwatch or timer measurements. The App does not require you to create an account.</p>
+      <p>Depending on your device and its settings, local app data may also be included in operating-system backup or restore services, such as Android backup, or iCloud Backup and device backups on iOS. These backups are managed separately by the device or platform provider.</p>
 
-      <h2>2. Information processed by advertising and consent services</h2>
-      <p>The App uses the Google Mobile Ads SDK (AdMob) to display advertisements and the Google User Messaging Platform (UMP) SDK to manage applicable advertising privacy notices and choices. These Google services may automatically collect, process, or share information such as:</p>
+      <h2>2. Device permissions</h2>
+      <p>The App asks for or uses the following permissions:</p>
+      <ul>
+        <li><strong>Notifications</strong> (Android and iOS): to tell you when a timer finishes, including while the App is in the background.</li>
+        <li><strong>Alarms</strong> (iOS 26 or later, using Apple's AlarmKit): to sound the timer alarm and show its countdown on the Lock Screen even when the App is closed.</li>
+        <li><strong>Exact alarms, foreground service, wake lock, and vibration</strong> (Android): to ring the timer at the scheduled time and keep the alarm sound playing until you stop it.</li>
+        <li><strong>Tracking</strong> (iOS, optional): the App may ask for permission through Apple's App Tracking Transparency (ATT) to use your device's advertising identifier (IDFA) for advertising, as described in Section 3. You can deny this; the App and its advertising continue to work without the IDFA.</li>
+        <li><strong>Internet and network state</strong> (Android): used by the advertising and consent services described in Section 3. On iOS, network access does not require a permission.</li>
+      </ul>
+      <p>Timer alarms and notifications are scheduled and delivered on your device by the operating system. The App does not send your timer settings or measurements to the developer. You can allow or deny these permissions in your device settings at any time; if you deny notifications or alarms, the App may not be able to alert you when it is closed.</p>
+
+      <h2>3. Information processed by advertising and consent services</h2>
+      <p>The App uses the Google Mobile Ads SDK (AdMob) to display banner advertisements and the Google User Messaging Platform (UMP) SDK to manage applicable advertising privacy notices and choices, on both Android and iOS. These Google services may automatically collect, process, or share information such as:</p>
       <ul>
         <li>IP address, which may be used to estimate your approximate location;</li>
-        <li>Device or account-related identifiers, including an advertising identifier where available;</li>
-        <li>App interactions, such as app launches and interactions relevant to advertising;</li>
-        <li>Diagnostic and performance information, such as errors and app/SDK performance; and</li>
+        <li>Device identifiers, including an advertising identifier where available (on iOS, the IDFA is used only if you allow tracking through ATT);</li>
+        <li>App interactions and advertising data, such as app launches, the ads you have seen, and interactions with ads;</li>
+        <li>Diagnostic and performance information, such as crash logs, app launch time, and app/SDK performance; and</li>
         <li>Advertising consent and privacy-choice information, as applicable.</li>
       </ul>
-      <p>These data may be used to deliver and measure advertisements, support analytics related to advertising, improve service performance, and detect fraud or abuse. Processing depends on your device settings, region, consent choices, and Google's policies. The App does not request precise GPS location for its stopwatch or timer functions.</p>
+      <p>These data may be used to deliver and measure advertisements, support analytics related to advertising, diagnose and improve the services, and detect fraud or abuse. Processing depends on your device settings, region, consent choices, and Google's policies. The App does not request precise GPS location for its stopwatch or timer functions, and it does not request access to location services.</p>
+      <p>On iOS, if you deny tracking through ATT, the App continues to request ads, but the Google Mobile Ads SDK does not send the IDFA in ad requests.</p>
       <p>For more information, see <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from apps and sites that use its services</a>.</p>
 
-      <h2>3. Sharing of information</h2>
-      <p>Information described in Section 2 may be transmitted to or processed by Google and its advertising partners in connection with advertising and consent management. The developer does not independently send users' saved stopwatch or timer measurements to an external server or sell those measurements.</p>
+      <h2>4. Sharing of information</h2>
+      <p>Information described in Section 3 may be transmitted to or processed by Google and its advertising partners in connection with advertising and consent management. The developer does not independently send users' saved stopwatch or timer measurements to an external server or sell those measurements.</p>
 
-      <h2>4. Your choices</h2>
-      <p>Where required and available, the App displays privacy or consent options provided by UMP. You can revisit applicable choices through the App's “Privacy settings” menu when that option is shown. You may also manage advertising-related preferences in your Android or Google settings. Some advertisements may still be displayed depending on applicable settings and choices.</p>
+      <h2>5. Your choices</h2>
+      <p>Where required and available, the App displays privacy or consent options provided by UMP. You can review your choices later from “Privacy settings” in the App's menu on Android, or “Privacy Settings” in the App's Settings screen on iOS, when that option is shown. Some advertisements may still be displayed depending on applicable settings and choices.</p>
+      <p>On Android, you may also manage advertising-related preferences in your Android or Google settings. On iOS, you can allow or deny tracking for the App in Settings &gt; Privacy &amp; Security &gt; Tracking, and allow or deny alarms and notifications for the App in the Settings app.</p>
 
-      <h2>5. Data retention and deletion</h2>
-      <p>Saved stopwatch and timer information remains in the App's local storage until you clear the App's data or uninstall the App. The current version does not provide an option to delete individual saved records within the App.</p>
+      <h2>6. Data retention and deletion</h2>
+      <p>Saved stopwatch and timer information remains in the App's local storage until you clear the App's data (Android) or delete the App (Android and iOS). The current versions do not provide an option to delete individual saved records within the App.</p>
       <p>If the data has been included in a device backup, that backup is managed separately by the operating system or backup provider.</p>
       <p>Information processed by Google or its advertising partners is subject to their respective retention and deletion practices. Please refer to the linked Google policies for information about those practices and your controls. For privacy questions or requests relating to the developer's handling of data, please contact the email address below.</p>
 
-      <h2>6. Security</h2>
-      <p>We use platform-provided app storage and rely on the security measures of the third-party services integrated into the App. Network transmissions handled by Google services use their applicable security protections. No electronic system can be guaranteed to be completely secure.</p>
+      <h2>7. Security</h2>
+      <p>We use platform-provided app storage and rely on the security measures of the operating system and of the third-party services integrated into the App. Network transmissions handled by Google services use their applicable security protections. No electronic system can be guaranteed to be completely secure.</p>
 
-      <h2>7. External links</h2>
-      <p>The App may contain links to third-party websites, services, or applications. Their privacy practices are governed by their own policies, and torukk is not responsible for those external services.</p>
+      <h2>8. External links</h2>
+      <p>The App may contain links to third-party websites, services, or applications, such as this Privacy Policy, which opens in your web browser, and advertisements, which may open the advertiser's website or app. Their privacy practices are governed by their own policies, and torukk is not responsible for those external services.</p>
 
-      <h2>8. Children's privacy</h2>
+      <h2>9. Children's privacy</h2>
       <p>The App is not specifically designed for children. torukk does not knowingly solicit personal information directly from children. If you have concerns about a child's information in relation to the App, please contact us.</p>
 
-      <h2>9. Changes to this policy</h2>
+      <h2>10. Changes to this policy</h2>
       <p>We may update this Privacy Policy if the App's functionality, integrated services, or legal requirements change. The updated policy and effective date will be published on this page.</p>
 
-      <h2>10. Contact</h2>
+      <h2>11. Contact</h2>
       <p>Developer: torukk<br>Email: <a href="mailto:torukk.dev@gmail.com">torukk.dev@gmail.com</a></p>
     </section>
 
@@ -81,49 +94,62 @@
 
     <section id="japanese" lang="ja">
       <h1>プライバシーポリシー</h1>
-      <p class="meta">施行日：2026年11月23日<br>開発者：torukk<br>対象アプリ：Easy! Stopwatch &amp; Timer（Android、パッケージ名：<code>com.torukk.stopwatch</code>）</p>
-      <p>torukkは、Easy! Stopwatch &amp; Timer（以下「本アプリ」）を無料で提供しています。本アプリにはGoogle AdMobによる広告が含まれます。本ポリシーでは、端末内に保存する情報と、外部サービスが処理する可能性がある情報について説明します。</p>
+      <p class="meta">施行日：2026年11月25日<br>開発者：torukk<br>対象アプリ：Easy! Stopwatch &amp; Timer<br>対応OS：Android（パッケージ名：<code>com.torukk.stopwatch</code>）、iOS（バンドルID：<code>com.torukk.stopwatch</code>）</p>
+      <p>torukkは、Easy! Stopwatch &amp; Timer（以下「本アプリ」）をAndroidとiOS向けに無料で提供しています。本アプリには、両OSともGoogle AdMobによる広告が含まれます。本ポリシーでは、端末内に保存する情報、本アプリが利用する端末の権限、外部サービスが処理する可能性がある情報について説明します。AndroidとiOSで内容が異なる場合は、対象のOSを明記します。</p>
 
       <h2>1. 端末内に保存する情報</h2>
-      <p>本アプリは、ストップウォッチ・タイマーの計測結果、設定、計測状態などを機能の提供のために端末内のアプリ領域へ保存します。開発者は、保存された計測記録を受信・保管する独自のサーバーを運営していません。本アプリの利用にアカウント登録は必要ありません。</p>
-      <p>端末やAndroidの設定によっては、これらのローカルデータがOSのバックアップ・復元機能の対象となる場合があります。その場合、バックアップの管理は端末またはプラットフォームの提供者により行われます。</p>
+      <p>本アプリは、ストップウォッチ・タイマーの計測結果、設定、計測状態などを機能の提供のために端末内のアプリ領域へ保存します。iOS版では、予約したタイマーのアラームまたは通知を後から変更・取り消すために、その識別子も保存します。開発者は、保存された計測記録を受信・保管する独自のサーバーを運営していません。本アプリの利用にアカウント登録は必要ありません。</p>
+      <p>端末やその設定によっては、これらのローカルデータがAndroidのバックアップや、iOSのiCloudバックアップ・端末のバックアップなど、OSのバックアップ・復元機能の対象となる場合があります。その場合、バックアップの管理は端末またはプラットフォームの提供者により行われます。</p>
 
-      <h2>2. 広告・同意管理サービスによる情報の処理</h2>
-      <p>本アプリは、広告表示のためにGoogle Mobile Ads SDK（AdMob）を、広告に関するプライバシー通知や選択肢の管理のためにGoogle User Messaging Platform（UMP）SDKを利用しています。これらのGoogleのサービスは、以下の情報を自動的に収集・処理・共有する場合があります。</p>
+      <h2>2. 端末の権限</h2>
+      <p>本アプリは、以下の権限を求める、または利用します。</p>
+      <ul>
+        <li><strong>通知</strong>（Android・iOS）：アプリがバックグラウンドにある場合も含め、タイマーの終了をお知らせするため。</li>
+        <li><strong>アラーム</strong>（iOS 26以降、AppleのAlarmKitを使用）：アプリを閉じている場合も、タイマーのアラームを鳴らし、ロック画面にカウントダウンを表示するため。</li>
+        <li><strong>正確なアラーム、フォアグラウンドサービス、スリープの防止、バイブレーション</strong>（Android）：予定の時刻にタイマーを鳴らし、停止するまでアラーム音を鳴らし続けるため。</li>
+        <li><strong>トラッキング</strong>（iOS、任意）：第3項の広告で端末の広告識別子（IDFA）を使用するため、AppleのApp Tracking Transparency（ATT）で許可を求める場合があります。拒否しても、本アプリと広告はIDFAを使用せずに引き続き動作します。</li>
+        <li><strong>インターネット・ネットワーク状態</strong>（Android）：第3項の広告・同意管理サービスが使用します。iOSでは、ネットワークの利用に権限は必要ありません。</li>
+      </ul>
+      <p>タイマーのアラームや通知は、OSによって端末内で予約・配信されます。本アプリがタイマーの設定や計測記録を開発者へ送信することはありません。これらの権限は端末の設定からいつでも許可・拒否できます。通知やアラームを拒否した場合、アプリを閉じているときにタイマーの終了をお知らせできないことがあります。</p>
+
+      <h2>3. 広告・同意管理サービスによる情報の処理</h2>
+      <p>本アプリは、AndroidとiOSの両方で、バナー広告の表示のためにGoogle Mobile Ads SDK（AdMob）を、広告に関するプライバシー通知や選択肢の管理のためにGoogle User Messaging Platform（UMP）SDKを利用しています。これらのGoogleのサービスは、以下の情報を自動的に収集・処理・共有する場合があります。</p>
       <ul>
         <li>IPアドレス（おおよその位置の推定に使用される場合があります）</li>
-        <li>広告IDなどの端末・アカウントに関連する識別子</li>
-        <li>アプリの起動や広告に関連する操作などの利用情報</li>
-        <li>エラー、アプリやSDKの動作状況などの診断・パフォーマンス情報</li>
+        <li>広告識別子などの端末の識別子（iOSでは、ATTでトラッキングを許可した場合にのみIDFAが使用されます）</li>
+        <li>アプリの起動、表示された広告、広告の操作などの利用情報・広告データ</li>
+        <li>クラッシュログ、アプリの起動時間、アプリやSDKの動作状況などの診断・パフォーマンス情報</li>
         <li>適用される場合の広告への同意・プライバシー選択情報</li>
       </ul>
-      <p>これらの情報は、広告の配信・効果測定、広告関連の分析、サービス改善、不正行為の防止などに利用されます。実際の処理は、端末の設定、居住地域、同意の選択、Googleのポリシーなどによって異なります。本アプリは、ストップウォッチ・タイマー機能のためにGPSによる正確な位置情報を要求しません。</p>
+      <p>これらの情報は、広告の配信・効果測定、広告関連の分析、サービスの診断・改善、不正行為の防止などに利用されます。実際の処理は、端末の設定、居住地域、同意の選択、Googleのポリシーなどによって異なります。本アプリは、ストップウォッチ・タイマー機能のためにGPSによる正確な位置情報を要求せず、位置情報サービスへのアクセスも求めません。</p>
+      <p>iOSでATTによるトラッキングを拒否した場合も、本アプリは広告のリクエストを続けますが、Google Mobile Ads SDKは広告リクエストにIDFAを含めません。</p>
       <p>詳細は、<a href="https://policies.google.com/privacy?hl=ja" rel="noopener noreferrer">Googleのプライバシーポリシー</a>および<a href="https://policies.google.com/technologies/partner-sites?hl=ja" rel="noopener noreferrer">Googleのサービスを使用するサイトやアプリから収集した情報の使用</a>をご参照ください。</p>
 
-      <h2>3. 情報の共有</h2>
-      <p>第2項の情報は、広告配信や同意管理のためにGoogleおよびその広告パートナーへ送信・処理される場合があります。開発者が独自に、保存されたストップウォッチ・タイマーの計測記録を外部サーバーへ送信したり、販売したりすることはありません。</p>
+      <h2>4. 情報の共有</h2>
+      <p>第3項の情報は、広告配信や同意管理のためにGoogleおよびその広告パートナーへ送信・処理される場合があります。開発者が独自に、保存されたストップウォッチ・タイマーの計測記録を外部サーバーへ送信したり、販売したりすることはありません。</p>
 
-      <h2>4. 利用者による選択</h2>
-      <p>必要な場合、本アプリはUMPが提供する同意・プライバシー設定画面を表示します。アプリ内に「Privacy settings」が表示される場合は、そのメニューから適用される選択を見直すことができます。AndroidやGoogleの設定でも広告に関連する設定を管理できます。設定や選択内容によっては、引き続き広告が表示される場合があります。</p>
+      <h2>5. 利用者による選択</h2>
+      <p>必要な場合、本アプリはUMPが提供する同意・プライバシー設定画面を表示します。表示される場合は、Android版ではアプリのメニューの「Privacy settings」、iOS版ではアプリの設定画面の「Privacy Settings」から、後で選択を見直すことができます。設定や選択内容によっては、引き続き広告が表示される場合があります。</p>
+      <p>Android版では、AndroidやGoogleの設定でも広告に関連する設定を管理できます。iOS版では、「設定」アプリの「プライバシーとセキュリティ」＞「トラッキング」で本アプリのトラッキングを、「設定」アプリで本アプリのアラームと通知を、それぞれ許可・拒否できます。</p>
 
-      <h2>5. データの保存期間と削除</h2>
-      <p>保存されたストップウォッチ・タイマーの情報は、アプリのデータを消去するか、アプリをアンインストールするまで端末内に保存されます。現在のバージョンでは、保存済み記録をアプリ内で個別に削除する機能は提供していません。</p>
+      <h2>6. データの保存期間と削除</h2>
+      <p>保存されたストップウォッチ・タイマーの情報は、アプリのデータを消去する（Android）か、アプリを削除する（Android・iOS）まで端末内に保存されます。現在のバージョンでは、保存済み記録をアプリ内で個別に削除する機能は提供していません。</p>
       <p>OSのバックアップに含まれたデータについては、OSまたはバックアップサービス提供者の保存・削除方針が別途適用されます。</p>
       <p>Googleや広告パートナーが処理する情報については、各社の保存・削除方針が適用されます。詳細や利用者による管理方法は上記のGoogleのポリシーをご確認ください。開発者によるデータの取扱いに関するお問い合わせは下記メールアドレスで受け付けます。</p>
 
-      <h2>6. セキュリティ</h2>
-      <p>本アプリはOSが提供するアプリ保存領域を使用し、組み込まれた外部サービスが提供するセキュリティ対策を利用します。Googleのサービスによる通信には、同社が定めるセキュリティ保護が適用されます。ただし、電子的な仕組みについて完全な安全性を保証することはできません。</p>
+      <h2>7. セキュリティ</h2>
+      <p>本アプリはOSが提供するアプリ保存領域を使用し、OSおよび組み込まれた外部サービスが提供するセキュリティ対策を利用します。Googleのサービスによる通信には、同社が定めるセキュリティ保護が適用されます。ただし、電子的な仕組みについて完全な安全性を保証することはできません。</p>
 
-      <h2>7. 外部リンク</h2>
-      <p>本アプリには外部のウェブサイト、サービス、アプリへのリンクが含まれる場合があります。外部サービスにはそれぞれのプライバシーポリシーが適用され、torukkはその運営や情報の取扱いを管理していません。</p>
+      <h2>8. 外部リンク</h2>
+      <p>本アプリには、ウェブブラウザで開く本ポリシーや、広告主のウェブサイト・アプリを開く場合がある広告など、外部のウェブサイト、サービス、アプリへのリンクが含まれる場合があります。外部サービスにはそれぞれのプライバシーポリシーが適用され、torukkはその運営や情報の取扱いを管理していません。</p>
 
-      <h2>8. お子さまのプライバシー</h2>
+      <h2>9. お子さまのプライバシー</h2>
       <p>本アプリは特にお子さま向けに設計されたものではありません。torukkがお子さまから個人情報を直接求めることはありません。お子さまの情報の取扱いについて懸念がある場合は、下記の連絡先へお問い合わせください。</p>
 
-      <h2>9. ポリシーの変更</h2>
+      <h2>10. ポリシーの変更</h2>
       <p>アプリの機能、利用するサービス、法的要件の変更などに応じて、本ポリシーを更新する場合があります。最新版と施行日を本ページに掲載します。</p>
 
-      <h2>10. お問い合わせ</h2>
+      <h2>11. お問い合わせ</h2>
       <p>開発者：torukk<br>メール：<a href="mailto:torukk.dev@gmail.com">torukk.dev@gmail.com</a></p>
     </section>
     <footer>© 2026 torukk · Easy! Stopwatch &amp; Timer</footer>
